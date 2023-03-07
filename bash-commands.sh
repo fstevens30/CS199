@@ -41,3 +41,34 @@ sudo passwd testuser
 # List all users
 cat /etc/passwd
 # Returns a list of all users on the system
+
+# Set a Full Name for a user
+sudo usermod -c "Test User" testuser
+# Changes the Full Name of the user to "Test User"
+
+# Add a new user 
+adduser testuser
+
+# Give newuser a password (Starts a password prompt)
+passwd testuser
+
+# View the /etc/passwd file for a user
+cat /etc/passwd 
+# Returns a list of all users on the system and their information
+
+# CHANGING USER ACCOUNT DETAILS
+
+# Change the users login name
+usermod -l newname oldname
+
+# Date when the account expires (YYYY-MM-DD) (Default is never)
+usermod -e 2018-12-31 testuser
+# Test user account will expire on 2018-12-31
+
+# Instantly disable a user account
+usermod -e 1 testuser
+# Test user account will be disabled immediately
+
+# Deleting a user account
+userdel -r testuser
+# Deletes the testuser account and all of its files

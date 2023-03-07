@@ -24,3 +24,9 @@ more
 touch
 # Print working directory
 pwd
+
+# Switch to root user (super user)
+sudo su -
+
+# Show all files even hidden ones
+ls -a
