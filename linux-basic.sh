@@ -21,3 +21,5 @@ more
 less
 # Create a file
 touch
+# Print working directory
+pwd
