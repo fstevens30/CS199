@@ -16,9 +16,10 @@ rmdir
 cp
 # Copy one or more files
 cat
-# Display x text file 1 screen at a time
-more 
+# View file without opening it
 less
+# View file without opening it (less is better)
+more
 # Create a file
 touch
 # Print working directory

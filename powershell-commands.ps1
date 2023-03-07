@@ -35,5 +35,32 @@ Set-Location C:\Windows\System32
 Get-ChildItem C:\Windows\System32
 # This will list the contents of the C:\Windows\System32 directory.
 
+# List all users
+Get-LocalUser
+# Returns a list of all users on the system.
 
+# List all groups
+Get-LocalGroup
+# Returns a list of all groups on the system.
 
+# Create a new user
+New-LocalUser -Name "testuser" -Password (ConvertTo-SecureString -AsPlainText "testpassword" -Force)
+# Creates a user with the name "testuser" and the password "testpassword".
+
+# Create a new group
+New-LocalGroup -Name "testgroup"
+# Creates a group with the name "testgroup".
+
+# Add a user to a group
+Add-LocalGroupMember -Group "testgroup" -Member "testuser"
+# Adds the user "testuser" to the group "testgroup".
+
+# Remove a user from a group
+Remove-LocalGroupMember -Group "testgroup" -Member "testuser"
+# Removes the user "testuser" from the group "testgroup".
+
+# Remove a user
+Remove-LocalUser -Name "testuser"
+
+# Remove a group
+Remove-LocalGroup -Name "testgroup"
