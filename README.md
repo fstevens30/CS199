@@ -18,7 +18,8 @@ organisational IT support requirements.
 
 ## This Repo Contains
 
-Notes from class content, specifically examples of shell commands to use for system administration.
+Notes from class content, specifically examples of shell commands to use for system administration. There is currently no file structure but this may be implemented as notes grow.
+For now there are files for Powershell commands, `.ps1` and bash commands, `.sh`.
 
 ***
 
